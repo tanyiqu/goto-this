@@ -9,3 +9,11 @@ chrome.contextMenus.create({
         window.open(params.selectionText, '_blank')
     }
 });
+
+
+// 添加图标的点击事件
+chrome.browserAction.onClicked.addListener(function(tab) {
+    alert(`作者：tanyiqu
+项目地址：https://github.com/tanyiqu/goto-this
+版本：1.1`);
+});
